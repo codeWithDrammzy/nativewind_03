@@ -8,7 +8,7 @@ from django.core.files.base import ContentFile
 class Event(models.Model):
     name = models.CharField(max_length=250)
     description = models.TextField(max_length=250)
-    qr_code = models.ImageField(blank=True, null=True, upload_to='qecodes/')
+    qr_code = models.ImageField(blank=True, null=True, upload_to='qrcodes/')
     date = models.DateField()
 
     def __str__(self):
